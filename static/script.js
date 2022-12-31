@@ -1,5 +1,4 @@
-let userid;
-  let color;
+let userid ,color;
 
   let ws;
   if (window.WebSocket === undefined) {
@@ -39,8 +38,6 @@ let userid;
         $("#message").val("");        
     });
 
-
-
 function prompUserId(){    
     var name= prompt("Please enter your name","username");
     if (name!=null){
@@ -56,4 +53,3 @@ $('#message').on("keypress", function(e) {
             $("#sendMsg").trigger("click");            
         }
 });
-
